@@ -7,7 +7,7 @@
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=576 height=1024 tabindex="-1" style="width: 576px; height: 1024px; background: #231F20"></canvas>
-    <script src="Build/PW_Assembly_3D.loader.js"></script>
+    <script src="Build/PW_BaseUnit_3D.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -25,9 +25,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/PW_Assembly_3D.data",
-        frameworkUrl: "Build/PW_Assembly_3D.framework.js",
-        codeUrl: "Build/PW_Assembly_3D.wasm",
+        dataUrl: "Build/PW_BaseUnit_3D.data",
+        frameworkUrl: "Build/PW_BaseUnit_3D.framework.js",
+        codeUrl: "Build/PW_BaseUnit_3D.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "PW Innovations",
         productName: "PW Assembly Guide",
